@@ -32,5 +32,6 @@
             uses: super-linter/super-linter@v6.6.0  # x-release-please-version
             env:
               # To report GitHub Actions status checks
+              LINTER_RULES_PATH: 'bot'
               GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     
