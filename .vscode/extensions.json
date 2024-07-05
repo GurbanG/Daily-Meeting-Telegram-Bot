@@ -1,0 +1,21 @@
+{
+    "recommendations": [
+        "bierner.github-markdown-preview",
+        "bierner.markdown-yaml-preamble",
+        "davidanson.vscode-markdownlint",
+        "donjayamanne.python-environment-manager",
+        "eamodio.gitlens",
+        "github.vscode-github-actions",
+        "jnoortheen.nix-ide",
+        "kevinrose.vsc-python-indent",
+        "ms-python.black-formatter",
+        "ms-python.python",
+        "njpwerner.autodocstring",
+        "pomdtr.excalidraw-editor",
+        "statelyai.stately-vscode",
+        "takumii.markdowntable",
+        "tamasfe.even-better-toml",
+        "yahyabatulu.vscode-markdown-alert",
+        "ms-vsliveshare.vsliveshare"
+    ]
+}

@@ -1,0 +1,8 @@
+{
+    "dependencies": {
+        "xstate": "^5.13.2",
+        "@xstate/cli": "^0.5.17",
+        "fsm2mermaid": "^1.1.0",
+        "tsx": "^4.15.2"
+    }
+}

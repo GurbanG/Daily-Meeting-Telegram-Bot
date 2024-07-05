@@ -1,0 +1,20 @@
+services:
+  bot:
+    tty: true
+    build:
+      dockerfile: Dockerfile
+    env_file:
+      - .env
+    environment:
+      PYTHONBUFFERED: 1
+  mongodb:
+    image: mongo:7-jammy
+    container_name: ${MONGO_HOST}
+    ports:
+      - ${MONGO_PORT}:27017
+    env_file:
+      - .env
+    # TODO enable user and password
+    # environment:
+    #   MONGO_INITDB_ROOT_USERNAME: ${MONGO_USERNAME}
+    #   MONGO_INITDB_ROOT_PASSWORD: ${MONGO_PASSWORD}

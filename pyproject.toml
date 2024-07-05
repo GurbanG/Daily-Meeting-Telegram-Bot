@@ -1,0 +1,32 @@
+[tool.poetry]
+name = "bot"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+license = "mit"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+aiogram = "^3.5.0"
+dataclass-wizard = "^0.22.3"
+apscheduler = "^3.10.4"
+pymongo = "^4.7.2"
+beanie = "^1.26.0"
+pydantic-settings = "^2.2.1"
+pytz = "^2024.1"
+babel = "^2.15.0"
+
+[tool.poetry.group.dev.dependencies]
+black = "^24.4.2"
+mypy = "^1.10.0"
+pylint = "^3.1.0"
+babel = "^2.15.0"
+
+[tool.poetry.scripts]
+bot = "bot.main:main"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
