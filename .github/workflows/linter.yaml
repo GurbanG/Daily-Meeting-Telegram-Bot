@@ -1,7 +1,7 @@
 ---
-  name: Linter And SonarCloud
+  name: Linter
   
-  on:  # yamllint disable-line rule:truthy
+  on: 
     push: 
       branches: main
     pull_request: 
@@ -34,22 +34,3 @@
             # To report GitHub Actions status checks
             VALIDATE_PYTHON_PYLINT: true
             GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  
-    # sonarcloud:
-    #       permissions:
-    #           contents: read
-    #           packages: read
-    #           # To report GitHub Actions status checks
-    #           statuses: write
-        
-    #       name: SonarCloud
-    #       runs-on: ubuntu-latest
-          
-    #       steps:
-    #           - uses: actions/checkout@v4
-    #             with:
-    #       # Disabling shallow clone is recommended for improving relevancy of reporting
-    #               fetch-depth: 0
-    #           - name: SonarCloud Scan
-    #             uses: sonarsource/sonarcloud-github-action@v2.3 # Ex: v2.1.0, See the latest version at https://github.com/marketplace/actions/sonarcloud-scan
-    #             env:
-    #               SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
