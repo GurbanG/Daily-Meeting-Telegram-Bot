@@ -35,6 +35,12 @@
               VALIDATE_PYTHON_PYLINT: true
               GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  
       sonarcloud:
+            permissions:
+                contents: read
+                packages: read
+                # To report GitHub Actions status checks
+                statuses: write
+          
             name: SonarCloud
             runs-on: ubuntu-latest
             
