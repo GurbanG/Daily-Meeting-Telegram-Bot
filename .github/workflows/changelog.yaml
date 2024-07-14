@@ -3,12 +3,7 @@ name: Generate Changelog
 
 
 # Указывает событие, при котором будет запускаться workflow
-on:
-  # Событие push в репозиторий
-  push:
-    # Указывает, что workflow будет запускаться только при пушах в ветку main
-    branches:
-      - myBranch
+on: workflow_dispatch
 
 permissions:
   contents: write
